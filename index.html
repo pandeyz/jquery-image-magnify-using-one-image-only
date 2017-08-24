@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>OKZoom</title>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--[if lt IE 9]>
+  <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
+    document.createElement('hgroup');
+  </script>
+  <style type="text/css">
+  header ,nav ,section ,article ,aside ,footer ,hgroup {
+  display: block;
+  }
+  </style>
+  <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+  <script src='okzoom.js'></script>
+  <script>
+    $(function(){
+        $('#example').okzoom({
+            width: 200,
+            height: 200,
+            border: "1px solid black",
+            shadow: "0 0 5px #000"
+        });
+    });
+  </script>
+  <style type="text/css">
+    #example {
+        box-shadow: 0 3px 5px #888;
+        height: 200px;
+    }
+
+  </style>
+
+</head>
+<body>
+    <!-- <center>
+      <img id="example" src="img/fra2.jpeg">
+    </center> -->
+
+    <center>
+        <img id="example" src="img.jpg">
+    </center>
+</body>
+</html>
